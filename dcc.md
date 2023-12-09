@@ -75,6 +75,8 @@ $\beta = w\sqrt{\frac{\mu \epsilon}{2} \sqrt{1 + (\frac{\sigma}{w \epsilon})^2} 
 相速度，色散关系<br>
 $\alpha$和$\beta$表达式<br>
 能量密度<br>
+$w_{eav} = \frac{\epsilon}{4} E_{xm}^2 e^{-2 \alpha z}$ <br>
+$w_{mav} = \frac{\mu}{4} \frac{E_{xm}^2}{\left| \eta_c \right|} e^{-2 \alpha z}$ <br>
 平均坡印亭矢量（记结果）<br>
 $S_{av} = e_z \frac{\left| E \right|^2}{\left| \eta_c \right|} cos\phi$
 
