@@ -37,14 +37,28 @@ $E = - \partial A / \partial t -\nabla \varphi$
 
 ### 电路元件
 #### 电容
-同心内外圆柱壳电容  
-平行传输线电容  
-多导体等效电容  
-部分填充电介质平板电容器电容  
+同心内外圆柱壳电容<br> 
+$C = \frac{2 \pi \epsilon}{ln{\frac{b}{a}}}$<br>
+平行传输线电容  <br>
+$C = \frac{\pi \epsilon}{ln{\frac{D}{a}}}$ <br>
+多导体等效电容  <br>
+部分填充电介质平板电容器电容 <br> 
+平行板电容： $C = \frac{\epsilon S}{d}$
+填充介质与未填充介质部分看做并联，电容相加
 #### 电感
-内自感和外自感
+总内自感加外自感 <br>
+同轴线缆电感： $L = \frac{\mu}{8 \pi} + \frac{\mu}{2 \pi} ln{\frac{b}{a}}$<br>
+平行双线电感： $L = \frac{\mu}{4 \pi} + \frac{\mu}{\pi} ln{\frac{D}{a}}$<br>
+
 #### 电阻
 
+### 静电力
+$F = \frac{\partial W}{\partial x}$ <br>
+$W$ 为静电场能量
+
+### 场能量
+电场能量： $W_e = \frac{1}{2} \int \epsilon E^2 dV$ <br>
+磁场能量： $W_m = \frac{1}{2} \int \mu H^2 dV$ <br>
 
 # CH4 时谐电磁场
 波动方程 <br>
