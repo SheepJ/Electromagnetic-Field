@@ -21,6 +21,12 @@
 $B = \nabla \times A$  
 $E = - \partial A / \partial t -\nabla \varphi$
 
+洛伦兹规范：<br>
+$\nabla A + \mu \epsilon \frac{\partial \phi}{\partial t} =  0$ <br>
+
+
+
+
 ### 波动方程  
 
 
@@ -87,7 +93,7 @@ $\beta = w\sqrt{\frac{\mu \epsilon}{2} \sqrt{1 + (\frac{\sigma}{w \epsilon})^2} 
 
 波阻抗表达式，产生的相位差表达式<br>
 相速度，色散关系<br>
-$\alpha$和$\beta$表达式<br>
+$\alpha$ 和 $\beta$ 表达式<br>
 能量密度<br>
 $w_{eav} = \frac{\epsilon}{4} E_{xm}^2 e^{-2 \alpha z}$ <br>
 $w_{mav} = \frac{\mu}{4} \frac{E_{xm}^2}{\left| \eta_c \right|} e^{-2 \alpha z}$ <br>
@@ -136,7 +142,7 @@ $e^{-j \beta_1 z} + Re^{j \beta_1 z} = (1 - R)e^{-j \beta_1 z} + 2 R \cos \beta_
 当R>0时，凑出cos，当R<0时凑出sin<br> 
 要掌握合成波振幅求法，如：
 $\left| e^{-j \beta_1 z} + Re^{j \beta_1 z} \right| = \left| 1 + Re^{j2 \beta_1 z} \right|$<br>
-提一个$e^{-j \beta_1 z}$出来，它的模为1，剩下的就欧拉公式展开，实虚部平方和开根<br>
+提一个 $e^{-j \beta_1 z}$ 出来，它的模为1，剩下的就欧拉公式展开，实虚部平方和开根<br>
 注意极值点的位置会考。
 
 驻波比：
@@ -161,9 +167,9 @@ $R = \frac{\eta_2 \cos \theta_i -\eta_1 \cos \theta_t}{\eta_2 \cos \theta_i + \e
 
 $T = \frac{2\eta_2 \cos \theta_i}{\eta_2 \cos \theta_i + \eta_1 \cos \theta_t} = \frac{2 \cos \theta_i}{\cos \theta_i + \sqrt{\frac{\epsilon_2}{\epsilon_1} - \sin^2 \theta_i}}$ 
 
-$ (垂直入射的公式上每个前面乘一个cos)
+(垂直入射的公式上每个前面乘一个cos)
 
-在垂直入射的公式上$\eta_2$前面乘$\cos \theta_i$而 $\eta_1$乘一个$\cos \theta_t$
+在垂直入射的公式上 $\eta_2$ 前面乘 $\cos \theta_i$ 而 $\eta_1$ 乘一个 $\cos \theta_t$ <br>
 
 
 ### 平行极化波：
@@ -192,7 +198,7 @@ $T = \frac{2\sqrt{\frac{\epsilon_2}{\epsilon_1}} \cos \theta_i}{\frac{\epsilon_2
 $\eta_{ef} = \eta_2 \frac{\eta_3 + j \eta_2 \tan \beta_2 d}{\eta_2 + j \eta_3 \tan \beta_2 d}$ <br>
 d为第二层材料厚度 <br>
 
-当左右两层材料相同时，若$d = \frac{\lambda_1}{2 \sqrt{\epsilon_{r2}}}$ 则电磁波入射材料没有反射波，依据这个原理可以制作屏蔽罩。
+当左右两层材料相同时，若 $d = \frac{\lambda_1}{2 \sqrt{\epsilon_{r2}}}$ 则电磁波入射材料没有反射波，依据这个原理可以制作屏蔽罩。
 
 # 7 导行电磁波
 
