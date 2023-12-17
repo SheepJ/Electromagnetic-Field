@@ -156,6 +156,8 @@ $S = \frac{E_{1max}}{E_{1min}} = \frac{1+ \left| R\right|}{1- \left| R\right|}$
 反射系数和投射系数公式形式同理想介质一样，但是对应的波导都换成复数波导。说明反射投射波除了振幅大小变化，相位也发生了移动。
 在计算时先计算 $\frac{\sigma}{w\epsilon}$ 判断是不是良导体或是良介质，结合CH5的公式简化计算。
 
+损耗角 $\delta$ 有 $tan \delta = \frac{\sigma}{w \epsilon}$ <br>
+
 ## 6.2 斜入射
 
 折射定律：
@@ -185,10 +187,14 @@ $T = \frac{2\sqrt{\frac{\epsilon_2}{\epsilon_1}} \cos \theta_i}{\frac{\epsilon_2
 ### 全反射
 临界角 $\theta_c = \arcsin{\frac{n_2}{n_1}} = \arcsin{\sqrt{\frac{\epsilon_2}{\epsilon_1}}}$ <br>
 反射角的正余弦值一般用折射定律和三角函数关系式求，因为折射角不存在。
-入射角大于临界角会仍然会发生全反射，合成波是沿分界面方向传播，但振幅在垂直分界面方向按指数快速衰减，波主要存在分界面附近，称为`表面波`。
+入射角大于临界角会仍然会发生全反射，合成波是沿分界面方向传播，但振幅在垂直分界面方向按指数快速衰减，波主要存在分界面附近，称为`表面波`。 <br>
+趋肤深度 $\delta = \frac{1}{\alpha}$ <br>
+反射波和投射波系数仍然可以按照公式进行计算，结果将会附加一个相移项。入射波和反射波的合成看图分量相加。<br>
+折射波的计算：假设 $\theta_t$ 存在，波矢量 $\left| k \right|$ 按照当前所处的介质来求， $e_k$ 则根据假定的角 $\theta_t$ 进行分量合成 $e_k = e_x sin \theta_t + e_z cos \theta_t$ 得到的结果应该是一个复数，直接代入透射波表达式进行化简，得到表面波<br>
 
-### 全投射
-布儒斯特角 $\theta_b = \arcsin \sqrt{\frac{\epsilon_2}{\epsilon_2 + \epsilon_1}}$ 只对平行极化波有效。
+
+### 全透射
+布儒斯特角 $\theta_b = \arcsin \sqrt{\frac{\epsilon_2}{\epsilon_2 + \epsilon_1}} = arctan{\sqrt{\frac{\epsilon_2}{\epsilon_1}}}$ 只对平行极化波有效。
 对于垂直极化波，必须要求 $\epsilon_2 = \epsilon_1$
 
 这个特性可用于极化滤波
@@ -214,13 +220,20 @@ d为第二层材料厚度 <br>
 
 # Tips
 
-电介质，磁介质的极化磁化电荷怎么求  
-如果知道P或者M就根据公式求，如果不知道就根据
-$D=\epsilon E = \epsilon_0 E + P$  求出P再用公式
+电介质，磁介质的极化磁化电荷怎么求 <br> 
+$P = (\epsilon - \epsilon_0)E$ <br>
+$\rho_s = P \cdot e_n$ <br>
+体极化电荷： $\rho_P = - \nabla \cdot P$ <br>
+$M = \frac{B}{\mu_0} - H$<br>
+$J_s = M \times e_n$<br>
+体磁化电流： $J_M = \nabla \times M$ <br>
+
+如果知道P或者M就根据公式求，如果不知道就根据<br>
+$D=\epsilon E = \epsilon_0 E + P$  求出P再用公式<br>
 
 
-导体中不能存在静电场  
-电位移矢量点乘法向量等于面电荷密度 p67例2.42
+导体中不能存在静电场  <br>
+电位移矢量点乘法向量等于面电荷密度 p67例2.42<br>
 
-两个导体之间知道电势差，求解E可以先假设电荷q，用高斯定律，再把q换成电势差
-同心导体圆柱电场分布
+两个导体之间知道电势差，求解E可以先假设电荷q，用高斯定律，再把q换成电势差<br>
+同心导体圆柱电场分布<br>
