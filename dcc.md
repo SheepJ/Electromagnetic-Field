@@ -209,7 +209,41 @@ d为第二层材料厚度 <br>
 # 7 导行电磁波
 
 ## 7.1
-任意界面均匀波导系统的纵横场关系式P313
+任意界面均匀波导系统的纵横场关系式P313 <br>
+$H_x = - \frac{1}{k_c^2}(\gamma \frac{\partial H_z}{\partial x} - jw \epsilon \frac{\partial E_z}{\partial y})$ <br>
+
+$H_y = - \frac{1}{k_c^2}(\gamma \frac{\partial H_z}{\partial x} + jw \epsilon \frac{\partial E_z}{\partial y})$ <br>
+
+$E_x = - \frac{1}{k_c^2}(\gamma \frac{\partial E_z}{\partial x} + jw \epsilon \frac{\partial H_z}{\partial y})$ <br>
+
+$E_y = - \frac{1}{k_c^2}(\gamma \frac{\partial E_z}{\partial x} - jw \epsilon \frac{\partial H_z}{\partial y})$ <br>
+
+$k_c^2 = \gamma^2 + k^2$ <br>
+
+减加加减，HHEE
+
+### TEM 波
+$E_z$ 和 $H_z$ 分量都为0； 有 $k_c^2 = \gamma^2 + k^2 = 0$ <br>
+所得到的 传播常数，相速度，等与无界空间均匀平面波的传播特性相同。
+
+TEM 波在波导中不具备传播特性。
+
+
+### TE 波 和 TM波
+TE波 $E_z = 0$ ，TM波 $H_z = 0$ ， 从纵横场关系求得： <br>
+$Z_{TM} = \frac{\gamma}{jw \epsilon}$ <br>
+$Z_{TE} = \frac{jw \mu}{\gamma}$ <br>
+电场磁场关系和前两章没有区别。<br>
+
+$\gamma = \sqrt{k_c^2 - k^2}$ <br>
+1. 当 $k < k_c$ 时， $\gamma$ 为实数，求得 $e^{- \gamma z}$ 是一个衰减因子，波无法传播出去，处于截止状态。
+
+2. 当 $k > k_c$ 时， $\gamma = j \beta$ 为虚数， $\beta = \sqrt{k^2 - k_c^2}$ ，求得 $e^{- j \beta z}$ 是一个行波因子，波可以传播出去。
+
+称 $k = k_c$ 为截止频率，相应的还有： <br>
+截止角频率： $w_c = \frac{k_c}{\sqrt{\mu \epsilon}}$ <br>
+截止波长： $\lambda_c = \frac{w \pi}{k_c}$ <br>
+截止频率： $f_c = \frac{w}{2 \pi}$ <br>
 
 
 ## 7.2 矩形波导
