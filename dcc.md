@@ -247,10 +247,48 @@ $\gamma = \sqrt{k_c^2 - k^2}$ <br>
 
 
 ## 7.2 矩形波导
+### TM波
+求解波动方程，用分离变量法，TM波边界条件为波导面上电场为0 <br>
+$k_c^2 = k_x^2 + k_y^2$ <br>
+$k_x = \frac{m \pi}{a}$ <br>
+$k_y = \frac{n \pi}{b}$ <br>
+m、n 是大于0的整数 <br>
+$E(x,y) = E_m sin(\frac{m \pi}{a} x) sin(\frac{n \pi}{b} y)$ <br>
+代入纵横场关系即可求出其他分量<br>
 
+### TE波
+边界条件变为磁场在波导面上法向偏导为0 <br>
+求得 $H_z = H_m cos(\frac{m \pi}{a} x) cos(\frac{n \pi}{b} y)$ <br>
 
+$m、n$ 的取值组合代表一个模式，TM波的m、n不能为0，TE波的m、n可以但不能同时为0 <br>
+模式简并：相同一组m、n组合，TM波和TE波的截止波数k相等
 
+### 传播参数
+截止波数： $k_{cmn} = \sqrt{(\frac{m \pi}{a})^2 + (\frac{n \pi}{b})^2}$ <br>
+截止频率： $f_{cmn} = \frac{k_{cmn}}{2 \pi \sqrt{\mu \epsilon}}$ <br>
+截止波长： $\lambda_{cmn} = \frac{2 \pi}{k_{cmn}}$ <br>
+传播常数： $\gamma_{mn} = \sqrt{k_{cmn}^2 - k^2}= \sqrt{(\frac{m \pi}{a})^2 + (\frac{n \pi}{b})^2 - w^2 \mu \epsilon}$ <br>
+波导波长： $\lambda_{gmn} = \frac{2 \pi}{\beta_{mn}} = \frac{\lambda}{\sqrt{1 - (f_{cmn}/f)^2}}$ <br>
+相速度： $v_{pmn} = \frac{w}{\beta_{mn}} = \frac{v_p}{\sqrt{1 - (f_{cmn}/f)^2}}$ <br>
+波阻抗： $Z_{TM} = \frac{\beta_{mn}}{w \epsilon} = \eta \sqrt{1 - (\frac{f_{cmn}}{f})^2}$ <br>
+$Z_{TE} = \frac{w \mu}{\beta_{mn}} = \frac{\eta}{\sqrt{1 - (f_{cmn}/f)^2}}$ <br>
 
+### 主模
+截止频率最低，工作频带最宽，TE波的m、n可以取0 ，当长边取1短边取0时得到最小的截止波数（假设a是长边，b是短边）<br>
+$TE_{10}$ 的 $k_{c10} = \frac{\pi}{a}$ <br>
+
+管壁电流的概念，切断管壁电流 <br>
+
+单模传输，模式分布图 <br>
+
+$TE_{10}$ 的传输功率：
+$P = \frac{1}{2 Z_{TE_{10}}} \int \int E_m^2 sin^2(\pi / ax) dx dy = \frac{ab}{4 Z_{TE_{10}}} E_m^2$
+
+## 7.3 谐振腔
+在矩形谐振腔内波来回反射形成驻波，引入一个新的模式p用于表示驻波 <br>
+$k_{mnp} = \sqrt{(\frac{m \pi}{a})^2+(\frac{n \pi}{b})^2+(\frac{p \pi}{l})^2}$ <br>
+
+$TM_{mnp}$ 波m、n 不能为0， p可以为0； $TE_{mnp}$ 波m、n可以但不同时为0，p不能为0 <br>
 
 # Tips
 
