@@ -212,15 +212,15 @@ d为第二层材料厚度 <br>
 任意界面均匀波导系统的纵横场关系式P313 <br>
 $H_x = - \frac{1}{k_c^2}(\gamma \frac{\partial H_z}{\partial x} - jw \epsilon \frac{\partial E_z}{\partial y})$ <br>
 
-$H_y = - \frac{1}{k_c^2}(\gamma \frac{\partial H_z}{\partial x} + jw \epsilon \frac{\partial E_z}{\partial y})$ <br>
+$H_y = - \frac{1}{k_c^2}(\gamma \frac{\partial H_z}{\partial y} + jw \epsilon \frac{\partial E_z}{\partial x})$ <br>
 
 $E_x = - \frac{1}{k_c^2}(\gamma \frac{\partial E_z}{\partial x} + jw \epsilon \frac{\partial H_z}{\partial y})$ <br>
 
-$E_y = - \frac{1}{k_c^2}(\gamma \frac{\partial E_z}{\partial x} - jw \epsilon \frac{\partial H_z}{\partial y})$ <br>
+$E_y = - \frac{1}{k_c^2}(\gamma \frac{\partial E_z}{\partial y} - jw \epsilon \frac{\partial H_z}{\partial x})$ <br>
 
 $k_c^2 = \gamma^2 + k^2$ <br>
 
-减加加减，HHEE
+减加加减，HHEE， 先 $\gamma$ 再 $jw \epsilon$ ，对x先x后y，对y先y后x
 
 ### TEM 波
 $E_z$ 和 $H_z$ 分量都为0； 有 $k_c^2 = \gamma^2 + k^2 = 0$ <br>
@@ -289,6 +289,56 @@ $P = \frac{1}{2 Z_{TE_{10}}} \int \int E_m^2 sin^2(\pi / ax) dx dy = \frac{ab}{4
 $k_{mnp} = \sqrt{(\frac{m \pi}{a})^2+(\frac{n \pi}{b})^2+(\frac{p \pi}{l})^2}$ <br>
 
 $TM_{mnp}$ 波m、n 不能为0， p可以为0； $TE_{mnp}$ 波m、n可以但不同时为0，p不能为0 <br>
+
+
+
+
+# 8 电磁辐射
+## 8.1 滞后位
+观察点的位场变化滞后于源的变化，推迟的时间恰好是源的变化以速度 $ v = \frac{1}{\sqrt{\mu \epsilon}}$ 传播到观察点所需的时间，称为滞后现象。时间上的滞后可以转移到相位上。
+
+
+## 8.2 电偶极子
+
+### 近场区
+时变电偶极子近场与静电偶极子一样，称为准静态场，电偶极子没有能力向外辐射（近似情况下）。
+
+### 远场区
+$E_{\theta} = j \frac{I l \eta_0}{2 \lambda r} sin \theta e^{- j k r}$ <br>
+$H_{\phi} = j \frac{I l}{2 \lambda r} sin \theta e^{- j k r} $ <br>
+没有相位差； <br>
+远场是辐射场，电磁波沿径向r入射，<br>
+是TEM波， $\eta_0 = 120 \pi $ <br>
+具有方向性，跟 $\theta$ 有关 <br>
+振幅随 r 增大而衰减 <br>
+
+辐射功率： $P_r = 40 \pi^2 I^2 (\frac{l}{\lambda})^2$ <br>
+辐射电阻： $R_r = 2 P_r / I^2 = 80 \pi^2 (\frac{l}{\lambda})^2$ <br>
+
+
+## 8.3 天线
+归一化方向性函数： $F(\theta, \phi)$ <br>
+主瓣宽度： 
+副瓣电平： 要求尽可能低 <br>
+前后比： 优秀尽可能大 <br>
+方向性系数： $D = \frac{4 \pi}{\int_0^{2 \pi} \int_0^{\pi} F^2(\theta, \phi) sin \theta d \theta d \phi}$ <br>
+效率： 辐射功率与输入功率的比值；要尽可能增大辐射电阻，降低损耗电阻。 <br>
+增益系数： $G = \eta_A D$ <br>
+
+### 对称天线
+$F(\theta, \phi) = \frac{cos(kl cos \theta) - coskl}{sin \theta}$ <br>
+$E_{\theta} = j \frac{60 I}{r} F(\theta, \phi) e^{-jkr}$ <br>
+记住归一化方向性函数和方向性系数就都可以求了。 <br>
+电偶极子的电场、辐射电场公式不能再天线这直接套用。 <br>
+
+
+### 天线阵
+天线一定规律排列成一个阵列，获得期望的辐射方向性、更高的增益等。组成天线的独立的单元称为阵元。 <br>
+得到电场模为 $\frac{60 I}{r} F(\theta, \phi) F_{ar}(\theta, \phi)$ <br>
+即要多乘以一个阵因子 $F_{ar}(\theta, \phi)$ <br>
+
+
+均匀直线阵会出现多个主瓣和副瓣。 <br>
 
 # Tips
 
