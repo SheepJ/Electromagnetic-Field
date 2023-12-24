@@ -295,7 +295,7 @@ $TM_{mnp}$ 波m、n 不能为0， p可以为0； $TE_{mnp}$ 波m、n可以但不
 
 # 8 电磁辐射
 ## 8.1 滞后位
-观察点的位场变化滞后于源的变化，推迟的时间恰好是源的变化以速度 $ v = \frac{1}{\sqrt{\mu \epsilon}}$ 传播到观察点所需的时间，称为滞后现象。时间上的滞后可以转移到相位上。
+观察点的位场变化滞后于源的变化，推迟的时间恰好是源的变化以速度 $v = \frac{1}{\sqrt{\mu \epsilon}}$ 传播到观察点所需的时间，称为滞后现象。时间上的滞后可以转移到相位上。
 
 
 ## 8.2 电偶极子
@@ -305,10 +305,10 @@ $TM_{mnp}$ 波m、n 不能为0， p可以为0； $TE_{mnp}$ 波m、n可以但不
 
 ### 远场区
 $E_{\theta} = j \frac{I l \eta_0}{2 \lambda r} sin \theta e^{- j k r}$ <br>
-$H_{\phi} = j \frac{I l}{2 \lambda r} sin \theta e^{- j k r} $ <br>
+$H_{\phi} = j \frac{I l}{2 \lambda r} sin \theta e^{- j k r}$ <br>
 没有相位差； <br>
 远场是辐射场，电磁波沿径向r入射，<br>
-是TEM波， $\eta_0 = 120 \pi $ <br>
+是TEM波， $\eta_0 = 120 \pi$ <br>
 具有方向性，跟 $\theta$ 有关 <br>
 振幅随 r 增大而衰减 <br>
 
@@ -320,7 +320,7 @@ $H_{\phi} = j \frac{I l}{2 \lambda r} sin \theta e^{- j k r} $ <br>
 归一化方向性函数： $F(\theta, \phi)$ <br>
 主瓣宽度： 
 副瓣电平： 要求尽可能低 <br>
-前后比： 优秀尽可能大 <br>
+前后比： 要求尽可能大 <br>
 方向性系数： $D = \frac{4 \pi}{\int_0^{2 \pi} \int_0^{\pi} F^2(\theta, \phi) sin \theta d \theta d \phi}$ <br>
 效率： 辐射功率与输入功率的比值；要尽可能增大辐射电阻，降低损耗电阻。 <br>
 增益系数： $G = \eta_A D$ <br>
