@@ -82,7 +82,10 @@ $S_{av} = Re[S_c]$<br>
 
 # CH5 均匀平面波在无界空间的传播
 ## 5.1 在理想介质中传播
-
+理想介质 $\sigma = 0$ 没有损耗 <br>
+$\alpha = 0$ <br>
+$\beta = w \sqrt{\mu \epsilon}$ <br>
+$\eta = 120\pi$ <br>
 
 ## 5.2 在导电媒介中传播，振幅会有衰减，电场磁场会产生相位差
 波的表达式<br>
@@ -105,14 +108,19 @@ $S_{av} = e_z \frac{\left| E \right|^2}{\left| \eta_c \right|} cos\phi$
 $\gamma = jw \sqrt{\mu \epsilon(1- j\frac{\sigma}{w \epsilon})}$ <br>
 近似方法要记住 $(1+x)^n = 1+nx$<br>
 $\alpha = \frac{\sigma}{2} \sqrt{\frac{\mu}{\epsilon}}$ <br>
-$\beta = w \mu \sqrt{\mu \epsilon}$ <br>
+$\beta = w \sqrt{\mu \epsilon}$ <br>
 $\eta = \sqrt{\frac{\mu}{\epsilon}}(1-j\frac{\sigma}{w\epsilon})^{-\frac{1}{2}} = \sqrt{\frac{\mu}{\epsilon}}(1 + j\frac{\sigma}{2w\epsilon})$ <br>
 
 
 #### 2. 良导体
 $\alpha = \beta = \sqrt{\pi f \mu \sigma}$ <br>
 $\eta = \sqrt{\frac{jw\mu}{\sigma}} = \sqrt{\frac{2\pi f \mu}{\sigma}}e^{j\frac{\pi}{4}}$<br>
-趋肤效应，表面电流，表面电场，表面平均损耗功率 <br>
+趋肤效应：良导体的电磁波局限在表面附近。<br>
+趋肤深度 $\delta = \frac{1}{\alpha}$ <br>
+表面电阻： $R_s = \frac{1}{\sigma \delta}$ <br>
+表面电流： $J_s = J_0/\gamma$ <br>
+表面电场： $E_s = J_s Z_s$ <br>
+表面平均损耗功率： $P_{sav} = \frac{1}{2} \left| J_s \right| ^2 R_s$ <br>
 
 
 
@@ -290,7 +298,8 @@ $k_{mnp} = \sqrt{(\frac{m \pi}{a})^2+(\frac{n \pi}{b})^2+(\frac{p \pi}{l})^2}$ <
 
 $TM_{mnp}$ 波m、n 不能为0， p可以为0； $TE_{mnp}$ 波m、n可以但不同时为0，p不能为0 <br>
 
-
+### 品质因数
+$Q = 2\pi \frac{W}{W_T} = w \frac{W}{P_L}$ <br>
 
 
 # 8 电磁辐射
@@ -307,7 +316,7 @@ $TM_{mnp}$ 波m、n 不能为0， p可以为0； $TE_{mnp}$ 波m、n可以但不
 $E_{\theta} = j \frac{I l \eta_0}{2 \lambda r} sin \theta e^{- j k r}$ <br>
 $H_{\phi} = j \frac{I l}{2 \lambda r} sin \theta e^{- j k r}$ <br>
 没有相位差； <br>
-远场是辐射场，电磁波沿径向r入射，<br>
+远场是辐射场，电磁波沿径向r辐射，<br>
 是TEM波， $\eta_0 = 120 \pi$ <br>
 具有方向性，跟 $\theta$ 有关 <br>
 振幅随 r 增大而衰减 <br>
@@ -318,7 +327,7 @@ $H_{\phi} = j \frac{I l}{2 \lambda r} sin \theta e^{- j k r}$ <br>
 
 ## 8.3 天线
 归一化方向性函数： $F(\theta, \phi)$ <br>
-主瓣宽度： 
+主瓣宽度： 功率方向性函数等于一半时，两个半功率点的两条矢径的夹角。主板宽度越小能量越集中，定向性越好。 <br> 
 副瓣电平： 要求尽可能低 <br>
 前后比： 要求尽可能大 <br>
 方向性系数： $D = \frac{4 \pi}{\int_0^{2 \pi} \int_0^{\pi} F^2(\theta, \phi) sin \theta d \theta d \phi}$ <br>
@@ -335,7 +344,7 @@ $E_{\theta} = j \frac{60 I}{r} F(\theta, \phi) e^{-jkr}$ <br>
 ### 天线阵
 天线一定规律排列成一个阵列，获得期望的辐射方向性、更高的增益等。组成天线的独立的单元称为阵元。 <br>
 得到电场模为 $\frac{60 I}{r} F(\theta, \phi) F_{ar}(\theta, \phi)$ <br>
-即要多乘以一个阵因子 $F_{ar}(\theta, \phi)$ <br>
+即要多乘以一个阵因子 $F_{ar}(\theta, \phi) = \sqrt{1 + m^2 + 2m cos(\psi)}$ <br>
 
 
 均匀直线阵会出现多个主瓣和副瓣。 <br>
